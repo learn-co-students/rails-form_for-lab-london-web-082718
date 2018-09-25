@@ -1,4 +1,5 @@
 class SchoolClassesController < ApplicationController
+  
    def index
     @school_class = SchoolClass.all
   end
@@ -26,5 +27,5 @@ class SchoolClassesController < ApplicationController
     @school_class.update(params.require(:school_class))
     redirect_to school_class_path(@school_class)
   end
-  
+
  end
